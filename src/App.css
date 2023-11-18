@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Seymour+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Seymour One", sans-serif;
+  background-color: rgba(49, 125, 238, 0.818);
+}
+
+.title-cont {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: rgb(3, 3, 53);
+  font-size: 5rem;
+}
+
+.title2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgb(231, 20, 238);
+  font-size: 3rem;
+  gap: 1rem;
+}
+
+.title3 {
+  display: flex;
+  align-items: center;
+  color: rgb(238, 151, 20);
+  background-color: aliceblue;
+  font-size: 2rem;
+}
+
+.winner {
+  width: 100%;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.high {
+  color: rgb(14, 238, 133);
+}
+
+.game-content {
+  width: 100%;
+  display: flex;
+  /* position: fixed; */
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+/* .img-container {
+  width: 10rem;
+  margin: 0 auto;
+  margin-left: 15rem;
+} */
+
+.pic {
+  zoom: 40%;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.gameBoard {
+  background-color: aliceblue;
+  height: auto;
+  border: 5px solid #030335;
+}
+
+.row {
+  display: flex;
+  height: 7rem;
+}
+
+.cell {
+  display: flex;
+  width: 7rem;
+  border: 5px solid #030335;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:hover {
+  display: flex;
+  width: 7rem;
+  background-color: rgb(174, 214, 248);
+  cursor: pointer;
+  border: 5px solid #030335;
+  justify-content: center;
+  align-items: center;
+}
+.btn-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-restart {
+  font-size: 16px;
+  font-weight: 700;
+  width: 5rem;
+  display: flex;
+  padding: 0.5rem 6rem;
+  border-radius: 8px;
+  font-family: "Sofia Sans", sans-serif;
+  border: none;
+  color: aliceblue;
+  background-color: #030335;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.btn-restart:hover {
+  font-size: 16px;
+  font-weight: 700;
+  width: 5rem;
+  display: flex;
+  padding: 0.5rem 6rem;
+  border-radius: 8px;
+  font-family: "Sofia Sans", sans-serif;
+  border: none;
+  color: aliceblue;
+  background-color: #030335;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen {
+  @media (min-width: 630px) and (max-width: 870px) {
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: rgb(3, 3, 53);
+      font-size: 4rem;
+    }
+
+    .title2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: rgb(231, 20, 238);
+      font-size: 2rem;
+      gap: 1rem;
+    }
+
+    .title3 {
+      display: flex;
+      align-items: center;
+      color: rgb(238, 151, 20);
+      background-color: aliceblue;
+      font-size: 1rem;
+    }
+    .game-content {
+      width: 100%;
+      display: flex;
+      /* flex-direction: column; */
+      /* position: fixed; */
+      align-items: center;
+      justify-content: center;
+      height: auto;
+    }
+
+    .pic {
+      zoom: 25%;
+    }
+
+    .gameBoard {
+      background-color: aliceblue;
+      height: auto;
+      border: 4px solid #030335;
+    }
+
+    .row {
+      display: flex;
+      height: 5rem;
+    }
+
+    .cell {
+      display: flex;
+      width: 5rem;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cell:hover {
+      display: flex;
+      width: 5rem;
+      background-color: rgb(174, 214, 248);
+      cursor: pointer;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-restart {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: "Sofia Sans", sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .btn-restart:hover {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: "Sofia Sans", sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 320px) and (max-width: 631px) {
+    .title-cont {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: rgb(3, 3, 53);
+      font-size: 2rem;
+    }
+
+    .title2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: rgb(231, 20, 238);
+      font-size: 1rem;
+      gap: 1rem;
+    }
+
+    .title3 {
+      display: flex;
+      align-items: center;
+      color: rgb(238, 151, 20);
+      background-color: aliceblue;
+      font-size: 1rem;
+    }
+    .game-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* position: fixed; */
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+    }
+
+    .pic {
+      zoom: 20%;
+    }
+
+    .board {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .gameBoard {
+      width: 100%;
+      background-color: aliceblue;
+      height: auto;
+      border: 4px solid #030335;
+    }
+
+    .row {
+      display: flex;
+      height: 5rem;
+    }
+
+    .cell {
+      display: flex;
+      width: 5rem;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+    .cell:hover {
+      display: flex;
+      width: 5rem;
+      background-color: rgb(174, 214, 248);
+      cursor: pointer;
+      border: 5px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-restart {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: "Sofia Sans", sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .btn-restart:hover {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: "Sofia Sans", sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 268px) and (max-width: 320px) {
+    .title-cont {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: rgb(3, 3, 53);
+      font-size: 2rem;
+    }
+
+    .title2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: rgb(231, 20, 238);
+      font-size: 1rem;
+      gap: 1rem;
+    }
+
+    .title3 {
+      display: flex;
+      align-items: center;
+      color: rgb(238, 151, 20);
+      background-color: aliceblue;
+      font-size: 1rem;
+    }
+    .game-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* position: fixed; */
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+    }
+
+    .pic {
+      zoom: 20%;
+    }
+
+    .board {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .gameBoard {
+      width: 100%;
+      background-color: aliceblue;
+      height: auto;
+      border: 4px solid #030335;
+    }
+
+    .row {
+      display: flex;
+      height: 5rem;
+    }
+
+    .cell {
+      display: flex;
+      width: 5rem;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+    .cell:hover {
+      display: flex;
+      width: 5rem;
+      background-color: rgb(174, 214, 248);
+      cursor: pointer;
+      border: 5px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-restart {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: "Sofia Sans", sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .btn-restart:hover {
+      font-size: 12px;
+      font-weight: 700;
+      width: 4rem;
+      display: flex;
+      padding: 0.4rem 5rem;
+      border-radius: 8px;
+      font-family: "Sofia Sans", sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 150px) and (max-width: 269px) {
+    .title-cont {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: rgb(3, 3, 53);
+      font-size: 1rem;
+    }
+
+    .title2 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: rgb(231, 20, 238);
+      font-size: 1rem;
+      gap: 1rem;
+    }
+
+    .title3 {
+      display: flex;
+      align-items: center;
+      color: rgb(238, 151, 20);
+      background-color: aliceblue;
+      font-size: 0.75rem;
+    }
+    .game-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* position: fixed; */
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+    }
+
+    .pic {
+      zoom: 15%;
+    }
+
+    .board {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .gameBoard {
+      width: 90%;
+      background-color: aliceblue;
+      height: auto;
+      border: 4px solid #030335;
+    }
+
+    .row {
+      display: flex;
+      height: 3rem;
+    }
+
+    .cell {
+      display: flex;
+      width: 3rem;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+    .cell:hover {
+      display: flex;
+      width: 3rem;
+      background-color: rgb(174, 214, 248);
+      cursor: pointer;
+      border: 4px solid #030335;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-restart {
+      font-size: 12px;
+      font-weight: 500;
+      width: 2rem;
+      display: flex;
+      padding: 0.3rem 4rem;
+      border-radius: 8px;
+      font-family: "Sofia Sans", sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    .btn-restart:hover {
+      font-size: 12px;
+      font-weight: 500;
+      width: 2rem;
+      display: flex;
+      padding: 0.3rem 4rem;
+      border-radius: 8px;
+      font-family: "Sofia Sans", sans-serif;
+      border: none;
+      color: aliceblue;
+      background-color: #030335;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
